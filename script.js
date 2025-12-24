@@ -145,7 +145,7 @@
       ctx.shadowBlur = 6;
 
 // Move text inward safely (prevents touching borders / needle)
-      const textRadius = radius * 0.62; // sweet spot for 6 slices
+      const textRadius = radius * 0.52; // sweet spot for 6 slices
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(label, textRadius, 0);
