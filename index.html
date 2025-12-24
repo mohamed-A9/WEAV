@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spin the Wheel</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="app-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="title">Spin the Wheel</span>
+        <span class="subtitle">Try your luck ✨</span>
+      </div>
+
+      <a
+        class="ig-link"
+        href="https://www.instagram.com/weave.atelier?igsh=amIxem41bmQ3cDJ5"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Instagram profile weave.atelier"
+        title="Instagram: weave.atelier"
+      >
+        <!-- Inline SVG Instagram icon (no external assets needed) -->
+        <svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/>
+        </svg>
+        <span class="ig-handle">weave.atelier</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="app" role="main">
+    <section class="card" aria-label="Spin the wheel game">
+      <div class="wheel-wrap">
+        <div class="needle" aria-hidden="true"></div>
+
+        <canvas
+          id="wheel"
+          width="560"
+          height="560"
+          aria-label="Prize wheel"
+          role="img"
+        ></canvas>
+      </div>
+
+      <div class="controls" aria-label="Wheel controls">
+        <button id="spinBtn" class="btn btn-primary" type="button">
+          SPIN
+        </button>
+      </div>
+
+      <div class="result" aria-live="polite" aria-atomic="true">
+        <div class="result-title">Result</div>
+        <div id="resultText" class="result-text">Spin to test your luck ✨</div>
+      </div>
+
+      <footer class="footer">
+        <p class="terms" id="termsText">One spin per visit.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
